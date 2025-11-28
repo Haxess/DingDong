@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "220397677618",
+    "project_id": "dingdong2-9f88e",
+    "storage_bucket": "dingdong2-9f88e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:220397677618:android:50262f319e77a87105202b",
+        "android_client_info": {
+          "package_name": "com.example.dingdong2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHdRIzpI0T-eRDLITbsuWJqp9vECMECIg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
