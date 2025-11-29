@@ -22,6 +22,6 @@ class Splash_Screen : AppCompatActivity() {
             val intent = Intent(this, Start_Screen::class.java)
             startActivity(intent)
             finish() // Prevent the user from going back to the splashscreen
-        }, 3000) // adds delay
+        }, 2500) // adds delay
     }
 }
