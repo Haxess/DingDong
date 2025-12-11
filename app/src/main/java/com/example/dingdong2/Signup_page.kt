@@ -7,20 +7,24 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.dingdong2.databinding.ActivityLoginPageBinding
+import com.example.dingdong2.databinding.ActivitySignupPageBinding
 
-class Login_page : AppCompatActivity() {
-
-    private val binding: ActivityLoginPageBinding by lazy{
-        ActivityLoginPageBinding.inflate(layoutInflater)
+class Signup_page : AppCompatActivity() {
+    private val binding: ActivitySignupPageBinding by lazy{
+        ActivitySignupPageBinding.inflate(layoutInflater)
     }
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(binding.root)
-        binding.donthaveaccountbutton.setOnClickListener {
-            val intent = Intent(this , Signup_page::class.java)
+        binding.alreadyhaveaccount.setOnClickListener {
+            intent = Intent(this , Login_page::class.java)
             startActivity(intent)
         }
+        binding.createaccount.setOnClickListener {
+            intent = Intent(this , Login_page::class.java)
+            startActivity(intent)
+        }
+
     }
 }

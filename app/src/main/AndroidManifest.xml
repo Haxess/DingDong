@@ -11,25 +11,33 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DingDong2">
+<!--        <activity-->
+<!--            android:name=".MenuActivity"-->
+<!--            android:exported="false" />-->
+        <activity
+            android:name=".Location"
+            android:exported="false" />
+        <activity
+            android:name=".Signup_page"
+            android:exported="false" />
         <activity
             android:name=".Login_page"
-            android:exported="false"
-            android:theme="@style/Theme.DingDong2" />
+            android:exported="false" />
         <activity
             android:name=".Start_Screen"
             android:exported="false" />
         <activity
             android:name=".Splash_Screen"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="true"></activity>
+            android:exported="true">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
     </application>
 
 </manifest>
